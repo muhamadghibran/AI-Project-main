@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Plant, UserPlant, CareAction } from '../types/plants';
 import { getLocalStorageItem, setLocalStorageItem } from '../utils/storage';
-import plantsData from '../data/plants';
+import plantsData from '../data/plantsData';
 import { useWeather } from './WeatherContext';
 import { determineActions } from '../utils/plantCare';
 
@@ -28,7 +28,7 @@ export const usePlants = () => {
 };
 
 export const PlantsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [availablePlants] = useState<Plant[]>(plantsData);
+  const [availablePlants] = useState<Plant[]>(Object.values(plantsData));
   const [userPlants, setUserPlants] = useState<UserPlant[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [todaysActions, setTodaysActions] = useState<Map<string, CareAction[]>>(new Map());

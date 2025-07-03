@@ -64,7 +64,64 @@
     "light": "Light",
     "temperature": "Temperature",
     "height": "Height",
-    "fertilizer": "Fertilizer"
+    "fertilizer": "Fertilizer",
+    "names": {
+      "rose": "Rose",
+      "sunflower": "Sunflower", 
+      "jasmine": "Jasmine",
+      "peace-lily": "Peace Lily",
+      "snake-plant": "Snake Plant",
+      "aloe-vera": "Aloe Vera",
+      "basil": "Basil",
+      "lavender": "Lavender",
+      "orchid": "Orchid",
+      "fern": "Fern"
+    },
+    "descriptions": {
+      "rose": "A classic flowering plant known for its beautiful blooms and pleasant fragrance.",
+      "sunflower": "Tall annual plants known for their large, bright yellow blooms that follow the sun.",
+      "jasmine": "Climbing vines or shrubs with intensely fragrant white or yellow flowers.",
+      "peace-lily": "Popular indoor plant with elegant white flowers and glossy leaves.",
+      "snake-plant": "Nearly indestructible plant with tall, stiff leaves. Excellent air purifier.",
+      "aloe-vera": "Succulent plant with medicinal properties. Gel from leaves soothes burns and skin irritations.",
+      "basil": "Aromatic herb used in cooking, especially in Italian and Thai cuisines.",
+      "lavender": "Fragrant perennial herb with purple flowers, known for its calming scent.",
+      "orchid": "Elegant flowering plants with exotic blooms, popular as houseplants.",
+      "fern": "Lush green plants that thrive in humid, shaded environments."
+    },
+    "careInstructions": {
+      "rose": "Roses need well-draining soil and regular pruning to encourage blooming. Watch for pests like aphids and blackspot disease.",
+      "sunflower": "Sunflowers are relatively easy to grow. They need support as they grow taller and regular watering until established.",
+      "jasmine": "Jasmine likes humid conditions and consistent moisture. Provide a trellis or support for climbing varieties.",
+      "peace-lily": "Peace lilies prefer humid environments and will droop when thirsty. Keep away from cold drafts and direct sunlight.",
+      "snake-plant": "Allow soil to dry completely between waterings. Can tolerate low light but grows faster in brighter conditions.",
+      "aloe-vera": "Plant in well-draining soil and water only when top inch of soil is dry. Watch for brown spots which may indicate too much sun.",
+      "basil": "Pinch off flower buds to encourage leaf growth. Harvest from the top to promote bushier growth.",
+      "lavender": "Lavender needs excellent drainage. Prune after flowering to maintain shape and promote new growth.",
+      "orchid": "Use orchid bark mix for potting. Water weekly by soaking roots, then drain completely. Provide humidity.",
+      "fern": "Keep soil consistently moist but not waterlogged. Mist regularly to maintain humidity. Avoid direct sunlight."
+    },
+    "fertilizers": {
+      "rose-specific balanced": "Rose-specific balanced fertilizer",
+      "balanced, low-nitrogen": "Balanced, low-nitrogen fertilizer",
+      "balanced, high-phosphorus": "Balanced, high-phosphorus fertilizer",
+      "balanced houseplant": "Balanced houseplant fertilizer",
+      "cactus or succulent": "Cactus or succulent fertilizer",
+      "balanced, organic": "Balanced, organic fertilizer",
+      "low-nitrogen": "Low-nitrogen fertilizer",
+      "orchid-specific": "Orchid-specific fertilizer",
+      "balanced, diluted": "Balanced, diluted fertilizer"
+    },
+    "wateringFrequency": {
+      "low": "Low",
+      "medium": "Medium", 
+      "high": "High"
+    },
+    "lightPreference": {
+      "full sun": "Full Sun",
+      "partial sun": "Partial Sun",
+      "shade": "Shade"
+    }
   },
   "settings": {
     "notifications": {

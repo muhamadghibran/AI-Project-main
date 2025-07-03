@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { ChevronDown, ChevronUp, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePlants } from '../../context/PlantsContext';
+import { useTranslatedPlant } from '../../hooks/useTranslatedPlant';
 
 interface PlantActionCardProps {
   plant: UserPlant;
@@ -15,6 +16,9 @@ const PlantActionCard: React.FC<PlantActionCardProps> = ({ plant, actions }) => 
   const [completedActions, setCompletedActions] = useState<string[]>([]);
   const navigate = useNavigate();
   const { markActionComplete } = usePlants();
+  const { translatePlant } = useTranslatedPlant();
+  
+  const translatedPlant = translatePlant(plant);
   
   const handleCompleteAction = (actionId: string) => {
     setCompletedActions(prev => [...prev, actionId]);
@@ -48,14 +52,14 @@ const PlantActionCard: React.FC<PlantActionCardProps> = ({ plant, actions }) => 
       >
         <div className="w-16 h-16 rounded-lg overflow-hidden mr-4 flex-shrink-0">
           <img 
-            src={plant.image} 
-            alt={plant.name}
+            src={translatedPlant.image} 
+            alt={translatedPlant.name}
             className="w-full h-full object-cover"
           />
         </div>
         
         <div className="flex-grow">
-          <h3 className="font-semibold">{plant.name}</h3>
+          <h3 className="font-semibold">{translatedPlant.name}</h3>
           <p className="text-sm text-gray-600">{actions.length} {actions.length === 1 ? 'action' : 'actions'} needed</p>
         </div>
         

@@ -3,14 +3,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { usePlants } from '../context/PlantsContext';
 import PlantCard from '../components/features/PlantCard';
 import { Search } from 'lucide-react';
+import { useTranslatedPlant } from '../hooks/useTranslatedPlant';
+import { useTranslation } from 'react-i18next';
 
 const PlantSelectionPage: React.FC = () => {
   const { availablePlants, userPlants, addPlant, removePlant } = usePlants();
+  const { translatePlants } = useTranslatedPlant();
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   
-  const filteredPlants = availablePlants.filter(
+  const translatedPlants = translatePlants(availablePlants);
+  
+  const filteredPlants = translatedPlants.filter(
     plant => plant.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-             plant.scientificName.toLowerCase().includes(searchTerm.toLowerCase())
+             plant.scientificName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+             plant.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
   
   // Check if plant is in user's collection
@@ -43,7 +50,7 @@ const PlantSelectionPage: React.FC = () => {
         <div className="relative">
           <input
             type="text"
-            placeholder="Search plants..."
+            placeholder={t('plants.search')}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="input w-full pl-10"
@@ -80,7 +87,9 @@ const PlantSelectionPage: React.FC = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <p className="text-gray-600">No plants found matching "{searchTerm}"</p>
+          <p className="text-gray-600 dark:text-gray-400">
+            {t('plants.noResults')} "{searchTerm}"
+          </p>
         </motion.div>
       )}
       
@@ -94,7 +103,7 @@ const PlantSelectionPage: React.FC = () => {
         transition={{ duration: 0.3 }}
       >
         <div className="bg-green-600 text-white rounded-full py-1 px-3 text-sm font-medium">
-          {userPlants.length} {userPlants.length === 1 ? 'plant' : 'plants'} selected
+          {userPlants.length} {userPlants.length === 1 ? t('plants.selected') : t('plants.selectedPlural')}
         </div>
       </motion.div>
     </motion.div>

@@ -1,7 +1,8 @@
 import { Plant } from '../types/plants';
 
-const plants: Plant[] = [
-  {
+// Plant data with multilingual support and proper images
+const plantsData: Record<string, Plant> = {
+  'rose': {
     id: 'rose',
     name: 'Rose',
     scientificName: 'Rosa',
@@ -20,7 +21,7 @@ const plants: Plant[] = [
     },
     careInstructions: 'Roses need well-draining soil and regular pruning to encourage blooming. Watch for pests like aphids and blackspot disease.'
   },
-  {
+  'sunflower': {
     id: 'sunflower',
     name: 'Sunflower',
     scientificName: 'Helianthus annuus',
@@ -39,7 +40,7 @@ const plants: Plant[] = [
     },
     careInstructions: 'Sunflowers are relatively easy to grow. They need support as they grow taller and regular watering until established.'
   },
-  {
+  'jasmine': {
     id: 'jasmine',
     name: 'Jasmine',
     scientificName: 'Jasminum',
@@ -58,7 +59,7 @@ const plants: Plant[] = [
     },
     careInstructions: 'Jasmine likes humid conditions and consistent moisture. Provide a trellis or support for climbing varieties.'
   },
-  {
+  'peace-lily': {
     id: 'peace-lily',
     name: 'Peace Lily',
     scientificName: 'Spathiphyllum',
@@ -77,7 +78,7 @@ const plants: Plant[] = [
     },
     careInstructions: 'Peace lilies prefer humid environments and will droop when thirsty. Keep away from cold drafts and direct sunlight.'
   },
-  {
+  'snake-plant': {
     id: 'snake-plant',
     name: 'Snake Plant',
     scientificName: 'Sansevieria trifasciata',
@@ -96,7 +97,7 @@ const plants: Plant[] = [
     },
     careInstructions: 'Allow soil to dry completely between waterings. Can tolerate low light but grows faster in brighter conditions.'
   },
-  {
+  'aloe-vera': {
     id: 'aloe-vera',
     name: 'Aloe Vera',
     scientificName: 'Aloe barbadensis miller',
@@ -115,7 +116,7 @@ const plants: Plant[] = [
     },
     careInstructions: 'Plant in well-draining soil and water only when top inch of soil is dry. Watch for brown spots which may indicate too much sun.'
   },
-  {
+  'basil': {
     id: 'basil',
     name: 'Basil',
     scientificName: 'Ocimum basilicum',
@@ -134,7 +135,7 @@ const plants: Plant[] = [
     },
     careInstructions: 'Pinch off flower buds to encourage leaf growth. Harvest from the top to promote bushier growth.'
   },
-  {
+  'lavender': {
     id: 'lavender',
     name: 'Lavender',
     scientificName: 'Lavandula',
@@ -152,7 +153,45 @@ const plants: Plant[] = [
       max: 30
     },
     careInstructions: 'Lavender needs excellent drainage. Prune after flowering to maintain shape and promote new growth.'
+  },
+  'orchid': {
+    id: 'orchid',
+    name: 'Orchid',
+    scientificName: 'Orchidaceae',
+    image: 'https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'Elegant flowering plants with exotic blooms, popular as houseplants.',
+    wateringFrequency: 'low',
+    lightPreference: 'partial sun',
+    fertilizer: 'orchid-specific',
+    heightRange: {
+      min: 15,
+      max: 60
+    },
+    idealTemperature: {
+      min: 18,
+      max: 26
+    },
+    careInstructions: 'Use orchid bark mix for potting. Water weekly by soaking roots, then drain completely. Provide humidity.'
+  },
+  'fern': {
+    id: 'fern',
+    name: 'Fern',
+    scientificName: 'Polypodiopsida',
+    image: 'https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'Lush green plants that thrive in humid, shaded environments.',
+    wateringFrequency: 'high',
+    lightPreference: 'shade',
+    fertilizer: 'balanced, diluted',
+    heightRange: {
+      min: 10,
+      max: 80
+    },
+    idealTemperature: {
+      min: 16,
+      max: 24
+    },
+    careInstructions: 'Keep soil consistently moist but not waterlogged. Mist regularly to maintain humidity. Avoid direct sunlight.'
   }
-];
+};
 
-export default plants;
+export default plantsData;

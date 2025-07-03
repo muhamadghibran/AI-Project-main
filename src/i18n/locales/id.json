@@ -64,7 +64,64 @@
     "light": "Cahaya",
     "temperature": "Suhu",
     "height": "Tinggi",
-    "fertilizer": "Pupuk"
+    "fertilizer": "Pupuk",
+    "names": {
+      "rose": "Mawar",
+      "sunflower": "Bunga Matahari",
+      "jasmine": "Melati",
+      "peace-lily": "Lili Perdamaian",
+      "snake-plant": "Lidah Mertua",
+      "aloe-vera": "Lidah Buaya",
+      "basil": "Kemangi",
+      "lavender": "Lavendel",
+      "orchid": "Anggrek",
+      "fern": "Pakis"
+    },
+    "descriptions": {
+      "rose": "Tanaman berbunga klasik yang dikenal karena bunganya yang indah dan wanginya yang menyenangkan.",
+      "sunflower": "Tanaman tahunan tinggi yang dikenal karena bunganya yang besar dan kuning cerah yang mengikuti matahari.",
+      "jasmine": "Tanaman merambat atau semak dengan bunga putih atau kuning yang sangat harum.",
+      "peace-lily": "Tanaman hias populer dengan bunga putih elegan dan daun mengkilap.",
+      "snake-plant": "Tanaman yang hampir tidak bisa dihancurkan dengan daun tinggi dan kaku. Pembersih udara yang sangat baik.",
+      "aloe-vera": "Tanaman sukulen dengan khasiat obat. Gel dari daun menenangkan luka bakar dan iritasi kulit.",
+      "basil": "Herba aromatik yang digunakan dalam masakan, terutama dalam masakan Italia dan Thailand.",
+      "lavender": "Herba abadi harum dengan bunga ungu, dikenal karena aromanya yang menenangkan.",
+      "orchid": "Tanaman berbunga elegan dengan bunga eksotis, populer sebagai tanaman hias.",
+      "fern": "Tanaman hijau subur yang tumbuh subur di lingkungan lembab dan teduh."
+    },
+    "careInstructions": {
+      "rose": "Mawar membutuhkan tanah yang berdrainase baik dan pemangkasan rutin untuk mendorong pembungaan. Waspadai hama seperti kutu daun dan penyakit bercak hitam.",
+      "sunflower": "Bunga matahari relatif mudah ditanam. Mereka membutuhkan dukungan saat tumbuh lebih tinggi dan penyiraman rutin sampai mapan.",
+      "jasmine": "Melati menyukai kondisi lembab dan kelembaban yang konsisten. Sediakan teralis atau dukungan untuk varietas merambat.",
+      "peace-lily": "Lili perdamaian lebih suka lingkungan lembab dan akan layu saat haus. Jauhkan dari angin dingin dan sinar matahari langsung.",
+      "snake-plant": "Biarkan tanah mengering sepenuhnya di antara penyiraman. Dapat mentolerir cahaya rendah tetapi tumbuh lebih cepat dalam kondisi yang lebih terang.",
+      "aloe-vera": "Tanam di tanah yang berdrainase baik dan siram hanya ketika bagian atas tanah kering. Waspadai bintik coklat yang mungkin menunjukkan terlalu banyak sinar matahari.",
+      "basil": "Cubit tunas bunga untuk mendorong pertumbuhan daun. Panen dari atas untuk mendorong pertumbuhan yang lebih lebat.",
+      "lavender": "Lavendel membutuhkan drainase yang sangat baik. Pangkas setelah berbunga untuk mempertahankan bentuk dan mendorong pertumbuhan baru.",
+      "orchid": "Gunakan campuran kulit kayu anggrek untuk pot. Siram mingguan dengan merendam akar, lalu tiriskan sepenuhnya. Berikan kelembaban.",
+      "fern": "Jaga tanah tetap lembab secara konsisten tetapi tidak tergenang air. Semprotkan secara teratur untuk menjaga kelembaban. Hindari sinar matahari langsung."
+    },
+    "fertilizers": {
+      "rose-specific balanced": "Pupuk seimbang khusus mawar",
+      "balanced, low-nitrogen": "Pupuk seimbang, nitrogen rendah",
+      "balanced, high-phosphorus": "Pupuk seimbang, fosfor tinggi",
+      "balanced houseplant": "Pupuk tanaman hias seimbang",
+      "cactus or succulent": "Pupuk kaktus atau sukulen",
+      "balanced, organic": "Pupuk seimbang, organik",
+      "low-nitrogen": "Pupuk nitrogen rendah",
+      "orchid-specific": "Pupuk khusus anggrek",
+      "balanced, diluted": "Pupuk seimbang, encer"
+    },
+    "wateringFrequency": {
+      "low": "Rendah",
+      "medium": "Sedang",
+      "high": "Tinggi"
+    },
+    "lightPreference": {
+      "full sun": "Sinar Matahari Penuh",
+      "partial sun": "Sinar Matahari Sebagian",
+      "shade": "Teduh"
+    }
   },
   "settings": {
     "notifications": {
@@ -95,16 +152,6 @@
     "about": {
       "title": "Tentang",
       "version": "Versi"
-    },
-    "plants": {
-    "Rose": "Mawar",
-    "Sunflower": "Bunga Matahari",
-    "Jasmine": "Melati",
-    "Peace Lily": "Lili Perdamaian",
-    "Snake Plant": "Lidah Mertua",
-    "Aloe Vera": "Lidah Buaya",
-    "Basil": "Kemangi",
-    "Lavender": "Lavendel"
     }
   }
 }

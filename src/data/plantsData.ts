@@ -120,7 +120,7 @@ const plantsData: Record<string, Plant> = {
     id: 'basil',
     name: 'Basil',
     scientificName: 'Ocimum basilicum',
-    image: 'https://images.pexels.com/photos/1446318/pexels-photo-1446318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/4750274/pexels-photo-4750274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description: 'Aromatic herb used in cooking, especially in Italian and Thai cuisines.',
     wateringFrequency: 'high',
     lightPreference: 'full sun',
